@@ -33,7 +33,7 @@ Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 " Slightly darker theme
-colorscheme alduin
+"colorscheme alduin
 
 inoremap <Esc> <NOP>
 inoremap jk <Esc>
