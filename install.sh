@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## Neovim
 # Install vim-plug
