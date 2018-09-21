@@ -23,7 +23,7 @@ bg = ${colors.black}
 
 [bar/bar]
 monitor = ${env:MONITOR:}
-bottom = true
+bottom = false
 wm-restack = i3
 
 fixed-center = true
