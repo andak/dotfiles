@@ -99,6 +99,11 @@ nnoremap K 6k
 vnoremap J 4j
 vnoremap K 6k
 
+nnoremap L :tabnext<cr>
+nnoremap H :tabprevious<cr>
+vnoremap L :tabnext<cr>
+vnoremap H :tabprevious<cr>
+
 set hlsearch
 highlight Search ctermbg=LightBlue
 
