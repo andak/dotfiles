@@ -170,6 +170,7 @@ map <leader>f :pyf clang-format-3.8.py<cr>
 
 " Set Syntax highlighting for SCon{script|struct}
 au BufNewFile,BufRead SCons* set filetype=python
+au BufNewFile,BufRead wscript set filetype=python
 " Set 2 space indent when editing YAML
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
