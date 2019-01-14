@@ -37,6 +37,7 @@ call plug#end()
 
 inoremap <Esc> <NOP>
 inoremap jk <Esc>
+tnoremap jk <C-W>N
 
 " Leader
 let mapleader = "\<Space>"
