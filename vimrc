@@ -20,8 +20,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/a.vim'
 Plug 'johnsyweb/vim-makeshift'
-Plug 'jiangmiao/auto-pairs'
-
 
 " Themes
 Plug 'AlessandroYorba/Alduin'
@@ -182,10 +180,6 @@ fun! TrimWhitespace()
 endfun
 
 nnoremap <F5> :call TrimWhitespace()<CR>
-
-" Do not auto pair ', as this is used as
-" lifetime specifier in Rust
-let g:AutoPairs =  {'(':')', '[':']', '{':'}','"':'"', '`':'`'}
 
 " For the unlucky ones (windows only);
 " Remove ugly vim bars
