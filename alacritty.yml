@@ -29,9 +29,7 @@ window:
     x: 2
     y: 2
 
-  # Window decorations
-  # Setting this to false will result in window without borders and title bar.
-  decorations: true
+  decorations: none
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 4
@@ -105,11 +103,8 @@ font:
   use_thin_strokes: true
 
 # Should display the render timer
-render_timer: false
-
-# Use custom cursor colors. If true, display the cursor in the cursor.foreground
-# and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: false
+  debug:
+    render_timer: false
 
 # Colors (Material Theme)
 colors:
@@ -203,8 +198,9 @@ mouse:
   # screen buffer is active. This is used to allow mouse
   # scrolling for applications like `man`.
   #
-  # To disable this completely, set `faux_scrollback_lines` to 0.
-  faux_scrollback_lines: 1
+  # To disable this completely, set `faux_scrolling_lines` to 0.
+  faux_scrolling_lines: 1
+  hide_when_typing: true
 
 scrolling:
   # How many lines of scrollback to keep,
@@ -233,19 +229,6 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
 dynamic_title: true
-
-hide_cursor_when_typing: false
-
-# Style of the cursor
-#
-# Values for 'cursor_style':
-# - Block
-# - Underline
-# - Beam
-cursor_style: Block
-
-# Whether the cursor should be a hollow block on window focus loss
-unfocused_hollow_cursor: true
 
 # Live config reload (changes require restart)
 live_config_reload: true
