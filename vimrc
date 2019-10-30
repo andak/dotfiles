@@ -11,7 +11,7 @@ let g:neocomplete#enable_at_startup = 1
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer --java-completer --ts-completer' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf' }
 Plug 'junegunn/fzf.vim'
 Plug 'kien/rainbow_parentheses.vim'
