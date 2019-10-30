@@ -20,6 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/a.vim'
 Plug 'johnsyweb/vim-makeshift'
+Plug 'airblade/vim-gitgutter'
 
 " Themes
 Plug 'AlessandroYorba/Alduin'
@@ -50,6 +51,10 @@ set nu
 set ruler
 set wildmenu
 set scrolloff=3
+set updatetime=1000 " Update GitGutter every 1000 ms
+highlight GitGutterAdd    guifg=#009900 guibg=#073642 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 guibg=#073642 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 guibg=#073642 ctermfg=1
 
 set colorcolumn=100
 
