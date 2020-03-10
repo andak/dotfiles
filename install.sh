@@ -12,7 +12,7 @@ ln -s $(realpath alacritty.yml) ~/.config/alacritty/alacritty.yml
 ln -s $(realpath polybar) ~/.config/polybar/config
 ln -s $(realpath launch_polybar.sh) ~/.config/polybar/launch_polybar.sh
 
-mkdir ~/repo
+mkdir -p ~/repo
 # Must-have programming fonts
 git clone https://github.com/ryanoasis/nerd-fonts.git ~/repo/nerd-fonts
 
