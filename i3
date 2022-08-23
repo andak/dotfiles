@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -46,7 +46,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
-bindsym $mod+l focusright
+bindsym $mod+l focus right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -137,9 +137,33 @@ client.focused              #000000 #353439 #908994
 # Disable titlebar
 new_window 1pixel
 
+input * {
+   xkb_layout no
+}
 bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 
-bindsym $mod+r mode "resize"
 
-exec_always --no-startup-id $HOME/.config/polybar/launch_polybar.sh
+bar {
+    font pango:DejaVu Sans Mono, FontAwesome 12
+    position top
+    status_command $HOME/.cargo/bin/i3status-rs $HOME/.config/i3status-rust/config.toml
+    colors {
+        separator #666666
+        background #222222
+        statusline #dddddd
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
+    }
+}
+
+output DP-3 pos 0 0
+output eDP-1 pos 2560 0
+output HDMI-A-1 pos 4480 0
+
+#output DP-2 pos 0 0
+#output eDP-1 pos 3440 0
+
+seat seat0 xcursor_theme default 30
