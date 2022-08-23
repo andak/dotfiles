@@ -21,6 +21,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/a.vim'
 Plug 'johnsyweb/vim-makeshift'
 Plug 'airblade/vim-gitgutter'
+Plug 'mfukar/robotframework-vim'
 
 " Themes
 Plug 'AlessandroYorba/Alduin'
@@ -174,6 +175,10 @@ map <leader>f :pyf clang-format-3.8.py<cr>
 " Set Syntax highlighting for SCon{script|struct}
 au BufNewFile,BufRead SCons* set filetype=python
 au BufNewFile,BufRead wscript set filetype=python
+" robot files
+autocmd BufNewFile,BufRead *.robot setlocal filetype=robot
+autocmd BufNewFile,BufRead *.resource setlocal filetype=robot
+
 " Set 2 space indent when editing YAML
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
