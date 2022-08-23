@@ -1,13 +1,5 @@
 " Install vim-plug
 " https://github.com/junegunn/vim-plug
-"
-" Add a post-checkout hook to refresh ctags on git checkout:
-"
-" echo '#!/bin/sh
-" ctags -R . &' > .git/hooks/post-checkout
-" chmod +x .git/hooks/post-checkout
-
-let g:neocomplete#enable_at_startup = 1
 
 call plug#begin('~/.vim/plugged')
 
@@ -73,9 +65,6 @@ set cindent
 set cinoptions=>1s
 filetype plugin indent on
 filetype plugin on
-
-" ignore case in searches
-"set ignorecase
 
 set encoding=utf-8
 set termencoding=utf-8
