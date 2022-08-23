@@ -85,9 +85,9 @@ nmap <c-w>k :res -20<cr>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o,*.pyc
 
 " Fast moving, J and K (capital) jumps 4
-nnoremap J 4j
+nnoremap J 6j
 nnoremap K 6k
-vnoremap J 4j
+vnoremap J 6j
 vnoremap K 6k
 
 nnoremap L :tabnext<cr>
