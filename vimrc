@@ -291,3 +291,12 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
   vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
   vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 endif
+
+" Get rid of the ugly pink background in popups
+:highlight Pmenu ctermbg=gray guibg=gray guifg=black ctermfg=black
+:highlight CocErrorSign ctermbg=gray guibg=gray guifg=black ctermfg=black
+:highlight CocWarningSign ctermbg=gray guibg=gray guifg=black ctermfg=black
+
+
+" Fix paste bug triggered by the above inoremaps
+set t_BE=
