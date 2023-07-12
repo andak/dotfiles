@@ -161,9 +161,6 @@ nmap <leader>o :Rg<cr>
 " Make with c
 nnoremap <leader>c :<C-U>make<CR>
 
-" Clang format with f
-map <leader>f :pyf clang-format-3.8.py<cr>
-
 " Set Syntax highlighting for SCon{script|struct}
 au BufNewFile,BufRead SCons* set filetype=python
 au BufNewFile,BufRead wscript set filetype=python
