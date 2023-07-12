@@ -140,6 +140,14 @@ new_window 1pixel
 input * {
    xkb_layout no
 }
+
+input "1739:52823:SYNA8009:00_06CB:CE57_Touchpad" {
+    dwt disabled
+    accel_profile adaptive
+    natural_scroll enabled
+    tap enabled
+}
+
 bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 
