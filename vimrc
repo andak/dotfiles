@@ -36,6 +36,9 @@ nnoremap <Leader>w :w<CR>
 " Quit with q
 nnoremap <Leader>q :q<CR>
 
+" Disable ex mode
+:map Q <Nop>
+
 " ui
 syntax on
 set nu
