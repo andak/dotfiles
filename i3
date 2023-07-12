@@ -167,11 +167,13 @@ bar {
     }
 }
 
-output DP-3 pos 0 0
-output eDP-1 pos 2560 0
-output HDMI-A-1 pos 4480 0
-
+# Hjemme
+#output HDMI-A-1 pos 4480 0
+#output eDP-1 pos 2560 0
 #output DP-2 pos 0 0
-#output eDP-1 pos 3440 0
+
+# Jobb
+output DP-3 pos 0  0
+output eDP-1 pos 3440  0
 
 seat seat0 xcursor_theme default 30
