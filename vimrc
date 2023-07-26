@@ -286,9 +286,10 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 
 " Get rid of the ugly pink background in popups
-:highlight Pmenu ctermbg=gray guibg=gray guifg=black ctermfg=black
-:highlight CocErrorSign ctermbg=gray guibg=gray guifg=black ctermfg=black
-:highlight CocWarningSign ctermbg=gray guibg=gray guifg=black ctermfg=black
+:highlight Pmenu ctermbg=black guibg=black guifg=gray ctermfg=gray
+:highlight CocErrorSign ctermbg=black guibg=black guifg=red ctermfg=red
+:highlight CocWarningSign ctermbg=black guibg=black guifg=yellow ctermfg=yellow
+:highlight CocFloating  ctermbg=black guibg=black guifg=gray ctermfg=gray
 
 
 " Fix paste bug triggered by the above inoremaps
