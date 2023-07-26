@@ -135,7 +135,7 @@ mode "resize" {
 # Set bordercolor
 client.focused              #000000 #353439 #908994
 # Disable titlebar
-new_window 1pixel
+default_border pixel 1
 
 input * {
    xkb_layout no
