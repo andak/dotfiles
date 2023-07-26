@@ -186,7 +186,7 @@ set laststatus=2
 
 " coc.vim  stuff
 "Switch between header and source
-:command A :CocCommand clangd.switchSourceHeader
+:command A :CocCommand clangd.switchSourceHeader vsplit
 " TextEdit might fail if hidden is not set.
 set hidden
 " Some servers have issues with backup files, see #649.
@@ -272,7 +272,8 @@ omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
-nmap <leader>f <Plug>(coc-codeaction-cursor)
+nmap <leader>c <Plug>(coc-codeaction-cursor)
+xmap <leader>f <Plug>(coc-format-selected)
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
