@@ -9,19 +9,11 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
-Plug 'johnsyweb/vim-makeshift'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'mfukar/robotframework-vim'
 Plug 'tommcdo/vim-kangaroo'
 Plug 'peterhoeg/vim-qml'
-
-" Themes
-Plug 'AlessandroYorba/Alduin'
-Plug 'w0ng/vim-hybrid'
-Plug 'felixhummel/setcolors.vim'
-Plug 'flazz/vim-colorschemes'
-
 
 call plug#end()
 
